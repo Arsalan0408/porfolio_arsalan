@@ -1,12 +1,12 @@
-/* styles.css - Start styling your potfolio website here */
-/* === RESET & BASE === */
+/* styles.css - Start styling your portfolio website here */
+/* === Reset & Base=== */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* CSS Custom Properties (variables) - DRY Principle */
+/* CSS custom properties (variables) - Dry Principle */
 :root {
     --primary: #1B4F72;
     --accent: #F18F01;
@@ -20,18 +20,17 @@
 body {
     font-family: var(--font-main);
     color: var(--text);
-    line-height: 1.6;
     background-color: var(--white);
+    line-height: 1.6;
 }
 
-
-/* NAVIGATION */
+/* Navigation*/
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background: var(--primary);
+    background-color: var(--primary);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -39,8 +38,8 @@ body {
 
 .logo {
     font-size: 28px;
-    font-weight: bold;
     color: var(--white);
+    font-weight: bold;
 }
 
 .nav-links {
@@ -53,29 +52,28 @@ body {
     color: var(--white);
     text-decoration: none;
     font-weight: 500;
+    font-size: 20px;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
     color: var(--accent);
-
 }
 
-/* HERO SECTION */
+/* Hero Section */
 .hero-section {
-    text-align: center;
     background: linear-gradient(135deg, var(--primary), #2E86AB);
-    color: var(--white);
+    text-align: center;
     padding: 100px 5%;
 }
 
 .hero-section h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-
+    color: var(--white);
 }
 
-/* /SKILLS SECTION */
+/* SKILLS SECTION */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -169,22 +167,6 @@ body {
     color: var(--primary);
 }
 
-/* ID Selectors */
-#about {
-    background-color: var(--light);
-}
-
-#skills {
-    background-color: var(--white);
-}
-
-#projects {
-    background-color: var(--light);
-}
-
-#contact {
-    background-color: var(--white);
-}
 
 /* === ABOUT SECTION === */
 .about-content {
@@ -193,7 +175,7 @@ body {
     justify-content: center;
     gap: 50px;
     max-width: 1000px;
-    /*margin: 0 auto;*/
+    /margin: 0 auto;/
 }
 
 /* .profile-figure{
@@ -231,6 +213,7 @@ body {
     flex: 1;
     font-size: 1.1rem;
     line-height: 1.8;
+
 }
 
 /* === SECTION STYLES === */
@@ -255,8 +238,7 @@ section h2::after {
     border-radius: 2px;
 }
 
-/*===ANIMATIONS===*/
-@keyframes fadeInUp {
+/===Animation===/ @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(30px);
@@ -269,29 +251,24 @@ section h2::after {
 }
 
 .hero-section h1 {
-    animation: fadeInUp 0.8s ease 0.2s both;
+    animation: fadeIn 0.8s ease 0.2s both;
 }
 
 .tagline {
-    animation: fadeInUp 0.8s ease 0.4s both;
+    animation: fadeIn 0.8s ease 0.4s both;
 }
 
 .hero-buttons {
-    animation: fadeInUp 0.8s ease 0.6s both;
+    animation: fadeIn 0.8s ease 0.6s both;
 }
 
-/* === CONTACT FORM === */
-.contact-section {
+/===Contact Section===/ .contact-section {
     background: var(--light);
 }
 
 .form-group {
-    margin-bottom: 24px;
-}
-
-.form-group label {
+    margin-bottom: 20px;
     display: block;
-    margin-bottom: 8px;
     font-weight: 600;
     color: var(--primary);
 }
@@ -301,8 +278,8 @@ section h2::after {
 .form-select {
     width: 100%;
     padding: 14px 16px;
-    border: 2px solid #DDD;
     border-radius: 8px;
+    border: 2px solid #DDD;
     font-size: 1rem;
     transition: border-color 0.3s;
 }
@@ -312,19 +289,17 @@ section h2::after {
 .form-group .form-select:focus {
     border-color: var(--primary);
     outline: none;
-    box-shadow: 0 0 0 3px rgba(27, 79, 114, 0.2);
+    box-shadow: 0 0 8px rgba(27, 79, 114, 0.2);
 }
 
-/* === FOOTER === */
-.site-footer {
+/===Footer Section===/ .site-footer {
     background: var(--primary);
     color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 40px 5%;
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
+/===Responsive===/ @media (max-width: 768px) {
     .nav-links {
         display: none;
     }
@@ -342,16 +317,14 @@ section h2::after {
     }
 }
 
-/* CSS ADDED FOR MENU TOGGLE */
-/* === MOBILE NAVIGATION ==== */
-.menu-toggle {
+/* CSS for the menu toggle button */
+/===Mobile Navigation===/ .menu-toggle {
     display: none;
     background: none;
     border: none;
-    color: #fff;
     font-size: 30px;
+    color: #fff;
     cursor: pointer;
-
 }
 
 @media (max-width:768px) {
