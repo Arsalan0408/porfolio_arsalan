@@ -26,6 +26,7 @@
 
 <link rel="shortcut icon" href="./github.png" type="image/x-icon">
 <link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>  <!-- Ready for Day 8! -->
 </head>
 <body>
     <!-- HEADER + NAVIGATION -->
@@ -108,80 +109,36 @@
             </div>
        
            </section>
-          <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
+          <!-- CONTACT SECTION -->
+                     <section id="contact" class="contact-section">
+                        <h2>Get In Touch</h2>
+                        <form id="contact-form" action="" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="5" required></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Send Message🚀</button>
+                        </form>
+                     </section>
 
-            <p>Have a project in mind? Let's collaborate!</p>
-
-            <form action="/submit" method="POST">
-
-                <label for="name">Full Name:</label>
-                <input type="text"
-                       id="name"
-                       name="name"
-                       placeholder="Enter your name"
-                       required>
-
-                <label for="email">Email Address:</label>
-                <input type="email"
-                       id="email"
-                       name="email"
-                       placeholder="Enter your email"
-                       required>
-
-                <label for="subject">Subject:</label>
-                <select id="subject" name="subject">
-                    <option value="">-- Select a topic --</option>
-                    <option value="web-development">Web Development</option>
-                    <option value="mobile-apps">Mobile Apps</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label for="message">Message:</label>
-                <textarea id="message"
-                          name="message"
-                          rows="5"
-                          placeholder="Type your message here..."
-                          required></textarea>
-
-                <button type="submit">Send Message</button>
-
-            </form>
-
-            <p>
-                <strong>Email:</strong>
-                <a href="mailto:arsalaniqubal08@gmail.com">
-                    arsalaniqubal08@gmail.com
-                </a>
-            </p>
-
-            <p>
-                <strong>LinkedIn:</strong>
-                <a href="https://www.linkedin.com/in/arsalan-iqubal-a02722411"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    My LinkedIn
-                </a>
-            </p>
-
-            <p>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/Arsalan0408"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    My GitHub
-                </a>
-            </p>
-
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Arsalan. All rights reserved.</p>
-    </footer>
-
+                     <!-- FOOTER -->
+                      <footer class="site-footer">
+                        <p>&copy; <span class="footer-year"></span>Arsalan Iqubal. build with HTML, CSS and JS</p>
+                        <nav aria-label="Social links">
+                            <a href="https://github.com/Arsalan0408" target="_blank" rel="noopener noreferrer">Github</a>
+                            <a href="https://www.linkedin.com/in/arsalan-iqubal-a02722411" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                        </nav>
+                      </footer>
+               </main>
+        </nav>
+    </header>
 </body>
 </html>
