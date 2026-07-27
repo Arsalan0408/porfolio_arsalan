@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta name="keywords" content="Arsalan Iqubal, Portfolio, Web Developer, React, Node.js, JavaScript, HTML, CSS, Freelance Developer">
+    <meta name="author" content="Arsalan Iqubal">
+
+    <title>My Portfolio | Arsalan</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="My Portfolio | Arsalan">
+    <meta property="og:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:url" content="https://arsalan0408.github.io/portfolio">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Portfolio | Arsalan">
+    <meta name="twitter:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta name="twitter:image" content="profile.jpg">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="#about" class="logo">Arsalan</a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Hi, I am Arsalan</h1>
+            <p>I am a passionate developer.</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <figure>
+                <img
+                    src="profile.jpg"
+                    alt="Portrait of Arsalan Iqubal, Full Stack Web Developer"
+                    width="200"
+                    height="200">
+
+                <figcaption>
+                    Arsalan Iqubal | Full Stack Web Developer
+                </figcaption>
+            </figure>
+
+            <h3>My Learning Journey</h3>
+
+            <ol>
+                <li>Started learning HTML</li>
+                <li>Learned CSS for styling</li>
+                <li>Practiced JavaScript basics</li>
+                <li>Built my first portfolio website</li>
+                <li>Currently learning React and Node.js</li>
+            </ol>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <ol>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML5</h3>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS3</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Beginner</p>
+                </div>
+            </div>
+
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Technology</th>
+                        <th>Proficiency</th>
+                        <th>Years of Experience</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Advanced</td>
+                        <td>2.5</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Intermediate</td>
+                        <td>1.5</td>
+                    </tr>
+
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                        <td>1.3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+            <!-- Projects Section -->
+       <section id="projects" class="projects-section">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card" data-category="web">
+                    <img src="project1.jpg" alt="Weather App screenshot">
+                    <div class="project-card-body">
+                        <h3>Weather App</h3>
+                    <p>Real-time weather dashboard using OpenWeather API</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">API</span>
+                    </div>
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>Have a project in mind? Let's collaborate!</p>
+
+            <form action="/submit" method="POST">
+
+                <label for="name">Full Name:</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your name"
+                       required>
+
+                <label for="email">Email Address:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="">-- Select a topic --</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="mobile-apps">Mobile Apps</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          placeholder="Type your message here..."
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:arsalaniqubal08@gmail.com">
+                    arsalaniqubal08@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/arsalan-iqubal-a02722411"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    My LinkedIn
+                </a>
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/Arsalan0408"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    My GitHub
+                </a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Arsalan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
